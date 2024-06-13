@@ -4,6 +4,7 @@ window.onload = () => {
     // get a hold of the button
     document.querySelector("#theButton").addEventListener("click", ()=>{
 
+
         const name = document.getElementById('name').value;
 
 
@@ -33,3 +34,12 @@ function displayInfo(name, role) {
 
 
 }
+
+// increase the size of the button every time you click on it
+function increaseFn() { 
+    var btn = document.getElementById("theButton"); 
+    var currwidth = btn.clientWidth; 
+    var currheight = btn.clientHeight; 
+    btn.style.width = (currwidth + 20) + "px"; 
+    btn.style.height = (currheight + 10) + "px"; 
+} 

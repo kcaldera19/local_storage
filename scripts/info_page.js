@@ -2,6 +2,7 @@
 
 window.onload=()=>{
     console.log("connected to infos page")
+    document.getElementById('buttonthree').style.visibility='hidden';
     const name = localStorage.getItem('name');
     const role = localStorage.getItem('role');
 
